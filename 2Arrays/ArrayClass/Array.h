@@ -6,7 +6,6 @@ class Array {
     int *p;
     int size;
     int length;
-    void Add();
     void swap(int &a, int &b);
 
    public:
@@ -15,6 +14,7 @@ class Array {
     ~Array();
 
     // Methods
+    void Add();
     void Display();
     int Sum();
     int Max();
@@ -32,5 +32,6 @@ class Array {
     void LeftRotate();
     void RightShift();
     void RightRotate();
+    Array* Merge(Array A);
 };
 #endif  // ARRAY_H

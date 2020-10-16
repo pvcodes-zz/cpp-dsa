@@ -76,17 +76,45 @@ bool isEqual(char A[], char B[]) {
     return 1;
 }
 
+int nOfDuplicate(char A[]) {
+    int r;
+    return r;
+}
+bool isAnagram(char A[], char B[]) {
+    // It's Time Complexity is O(n)
+    int H[26] = {0};
+    for (int i = 0; A[i] != '\0'; i++) {
+        H[A[i] - 97] += 1;
+    }
+    for (int i = 0; A[i] != '\0'; i++) {
+        H[A[i] - 97] -= 1;
+        if (H[A[i] - 97] < 0) {
+            return 0;
+        }
+    }
+
+    return 1;
+}
+
+void permuationOnString() {}
+
 int main() {
     char p[] = "pranjallajnarp";
     char q[] = "pranjallajnarp";
     char a[] = "pran";
-    std::cout << len(p) << std::endl;
-    reverse(p);
+    char m[] = "medical";
+    char d[] = "decimal";
 
-    std::cout << p << std::endl;
-    std::cout << std::boolalpha << isPalindrome(p) << std::endl;
-    std::cout << std::boolalpha << isEqual(p, q) << std::endl;
-    std::cout << std::boolalpha << isEqual(p, a) << std::endl;
-
+    // std::cout << len(p) << std::endl;
+    // reverse(p);
+    // std::cout << p << std::endl;
+    // std::cout << std::boolalpha << isPalindrome(p) << std::endl;
+    // std::cout << std::boolalpha << isEqual(p, q) << std::endl;
+    // std::cout << std::boolalpha << isEqual(p, a) << std::endl;
+    std::cout << std::boolalpha << isAnagram(d, m) << std::endl;
     return 0;
 }
+
+int A[] = {1, 5, 8, 14, 19, 25};
+
+// 0142541992 814 815

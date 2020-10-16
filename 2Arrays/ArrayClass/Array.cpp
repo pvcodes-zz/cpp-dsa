@@ -3,19 +3,19 @@
 #include <iostream>
 
 // Constructor
-Array::Array() : size{10}, length{0} {
-    p = new int[size];
-    Add();
-}
-Array::Array(int sz) : size{sz}, length{0} {
-    std::cout << size << std::endl;
-    p = new int[size];
-    Add();
-}
+Array::Array() : size{10}, length{0} { p = new int[size]; }
+Array::Array(int sz) : size{sz}, length{0} { p = new int[size]; }
 // Destructor
 Array::~Array() { delete[] p; }
 
 // Private Method
+void Array::swap(int &a, int &b) {
+    int tmp = a;
+    a = b;
+    b = tmp;
+}
+
+// Public Method
 void Array::Add() {
     length = 0;
     std::cout << "Note: If you want to leave before filling all element enter '8899'" << std::endl;
@@ -29,13 +29,6 @@ void Array::Add() {
     }
 }
 
-void Array::swap(int &a, int &b) {
-    int tmp = a;
-    a = b;
-    b = tmp;
-}
-
-// Public Method
 void Array::Display() {
     std::cout << "Elements are: ";
     for (int i = 0; i < length; i++) std::cout << p[i] << " ";
