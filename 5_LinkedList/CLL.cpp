@@ -1,4 +1,3 @@
-
 #include "CLL.h"
 
 #include <iostream>
@@ -33,7 +32,8 @@ void Circular_LinkedList::Display() {
     std::cout << "NULL" << std::endl;
 }
 
-// Index start from 1. i.e, if you want to imsert a node before Head then function must be Insert(value_of_the_Node,0)
+// Index start from 1. i.e, if you want to imsert a node before Head then function must be
+// Insert(value_of_the_Node,0)
 void Circular_LinkedList::Insert(int x, int n) {
     if (n == 0) {
         push_front(x);

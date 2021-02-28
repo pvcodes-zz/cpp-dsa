@@ -23,5 +23,6 @@ class Doubly_LinkedList {
     void pop_back();
     void Delete(int index);  // take care of last index and first index
     void Reverse();
+    D_Node *get_head() { return Head; }
 };
 #endif  // DLL_H
