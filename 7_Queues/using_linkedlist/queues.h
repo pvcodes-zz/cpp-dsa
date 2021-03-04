@@ -1,21 +1,21 @@
 #ifndef QUEUES_H
 #define QUEUES_H
+
+#include "node.h"
+
 class Queue {
    private:
-    int *A;
-    int front;
-    int rear;
+    Node *front;
+    Node *rear;
 
    public:
     Queue();
-    Queue(int A[], int n);
     ~Queue();
 
     // Methods
+    void display();
     void enqueue(int x);
     void dequeue();
-    bool isEmpty();
-    bool isFull();
     int first();
     int last();
 };
