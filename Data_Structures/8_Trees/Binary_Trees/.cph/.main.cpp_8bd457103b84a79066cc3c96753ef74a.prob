@@ -1,0 +1,1 @@
+{"name":"Local: main","url":"/home/pvcodes/Data/Codes/cpp/cpp-dsa/8_Trees/Binary_Trees/main.cpp","tests":[{"id":1615802629595,"input":"10 1 20 1 30 0 0 0 0","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pvcodes/Data/Codes/cpp/cpp-dsa/8_Trees/Binary_Trees/main.cpp","group":"local","local":true}
